@@ -1,3 +1,5 @@
+module Day1 where
+
 import           Data.Function (on)
 import           Data.List
 

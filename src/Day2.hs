@@ -1,3 +1,5 @@
+module Day2 where
+
 import           Data.List (inits, tails)
 
 handleLine :: Read a => String -> [a]

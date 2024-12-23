@@ -11,3 +11,6 @@
 # Ignore all binaries
 src/*
 !src/*.hs
+
+# Ignore dist/
+dist-newstyle/
