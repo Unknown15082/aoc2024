@@ -1,12 +1,7 @@
 module Day2 where
 
 import           Data.List (inits, tails)
-
-handleLine :: Read a => String -> [a]
-handleLine = map read . words
-
-getInts :: IO [[Int]]
-getInts = map handleLine . lines <$> getContents
+import           Util
 
 fAnd :: [a -> Bool] -> a -> Bool
 fAnd fs x = all ($ x) fs

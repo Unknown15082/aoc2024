@@ -2,12 +2,7 @@ module Day1 where
 
 import           Data.Function (on)
 import           Data.List
-
-handleLine :: Read a => String -> [a]
-handleLine = map read . words
-
-getInts :: IO [[Int]]
-getInts = map handleLine . lines <$> getContents
+import Util
 
 solve1 :: [[Int]] -> Int
 solve1 x = let
