@@ -1,0 +1,13 @@
+# Inputs
+*.txt
+
+# Direnv
+.envrc
+.direnv
+
+# Session
+.session
+
+# Ignore all binaries
+src/*
+!src/*.hs
