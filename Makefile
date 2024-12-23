@@ -1,16 +1,12 @@
-all: build run
+all: run
 
-FILE = src/Day$(day)
 GHC = ghc -no-keep-hi-files -no-keep-o-files -Wno-tabs
 
-build: $(FILE).hs
-	@$(GHC) $(FILE).hs -o $(FILE)
+run:
+	@cabal run all -- -d $(day) < inputs/$(day).txt
 
-run: $(FILE)
-	@./$(FILE) < inputs/$(day).txt
-
-debug: $(FILE)
-	@./$(FILE)
+debug:
+	@cabal run all -- -d $(day)
 
 download:
 	@echo "Downloading testcases for Day $(day)"
