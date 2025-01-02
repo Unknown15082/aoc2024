@@ -5,6 +5,7 @@ import           Day2
 import           Day3
 import           Day4
 import           Day5
+import           Day6
 import           Options.Applicative hiding (Parser)
 import qualified Options.Applicative as Opt (Parser)
 
@@ -22,4 +23,5 @@ main = do
         3 -> Day3.main
         4 -> Day4.main
         5 -> Day5.main
+        6 -> Day6.main
         _ -> error "Error")
